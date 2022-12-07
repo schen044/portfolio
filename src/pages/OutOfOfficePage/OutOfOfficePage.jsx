@@ -12,7 +12,14 @@ export default function OutOfOfficePage() {
     return (
         <div>
           <h1>Out of Office</h1>
-          <a href="https://github.com/schen044/Out-Of-Office" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
+          <div className="project-info">
+            <a href="https://github.com/schen044/Out-Of-Office" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
+            <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" />
+            <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" />
+            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /> 
+            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+            <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" /> 
+          </div>
           <div className="project-body">
             <div>         
               <SimpleImageSlider

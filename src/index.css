@@ -172,3 +172,9 @@ button:hover {
 .project-body>.text {
   font-size: 30px;
 }
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
