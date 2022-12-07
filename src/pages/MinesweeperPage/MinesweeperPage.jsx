@@ -10,15 +10,20 @@ export default function HCGIMTrackerPage() {
     ];
     return (
         <div>
+          <h1>Minesweeper Clone</h1>
           <a href="https://github.com/schen044/minesweeper" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
-          <SimpleImageSlider
-            width={896}
-            height={600}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={true}
-          />
+          <div className="project-body">
+            <div>         
+              <SimpleImageSlider
+              width={896}
+              height={600}
+              images={images}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={true}
+            /></div>
+            <div className="text">A clone of the beloved computer game that helped train users how to left and right click. This was created for Project 1 of General Assembly's Software Engineering Immersive course. I chose to do Minesweeper since it's a game I've been playing from the days of dial-up internet and AOL.</div>
+          </div>
       </div>
     )
 }

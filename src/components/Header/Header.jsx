@@ -14,7 +14,7 @@ export default function Header() {
                 <a href="mailto:serra.chen20@gmail.com" target="_blank"><EmailIcon class="email-icon" /></a>
             </div>
             <div className="nav-links">
-                <Link to="/home">Home</Link>
+                <Link to="/home"><button className="home-button">⌂ &nbsp; Home</button></Link>
             </div>
         </nav>
     )

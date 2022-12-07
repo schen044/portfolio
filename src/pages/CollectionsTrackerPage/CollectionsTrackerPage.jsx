@@ -10,15 +10,20 @@ export default function CollectionsTrackerPage() {
     ];
     return (
         <div>
+          <h1>Collections Tracker</h1>
           <a href="https://github.com/schen044/Collections-Tracker" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
-          <SimpleImageSlider
-            width={896}
-            height={504}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={true}
-          />
+          <div className="project-body">
+            <div>         
+              <SimpleImageSlider
+              width={896}
+              height={504}
+              images={images}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={true}
+            /></div>
+            <div className="text">Collections Tracker is my take on the figurine tracking website My Figure Collection in case the site goes down or the owner returns from being MIA. The main use is to be able to check what items have been ordered without having to scrub through various websites and emails.</div>
+          </div>
       </div>
     )
 }

@@ -11,15 +11,20 @@ export default function OutOfOfficePage() {
     ];
     return (
         <div>
+          <h1>Out of Office</h1>
           <a href="https://github.com/schen044/Out-Of-Office" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
-          <SimpleImageSlider
-            width={896}
-            height={504}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={true}
-          />
+          <div className="project-body">
+            <div>         
+              <SimpleImageSlider
+              width={896}
+              height={504}
+              images={images}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={true}
+            /></div>
+            <div className="text">This project was a joint effort between me and two other cohort members. Our team wanted to help users plan upcoming trips, so we created Out of Office. Out of Office can log future trips along with create detailed itineraries and activities so there are no gaps and the user can stay on schedule.</div>
+          </div>
       </div>
     )
 }

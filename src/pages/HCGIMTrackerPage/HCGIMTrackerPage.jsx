@@ -9,15 +9,20 @@ export default function HCGIMTrackerPage() {
     ];
     return (
         <div>
-            <a href="https://github.com/schen044/HCGIM-Tracker" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
-            <SimpleImageSlider
-            width={896}
-            height={504}
-            images={images}
-            showBullets={true}
-            showNavs={true}
-            autoPlay={true}
-            />
+          <h1>HCGIM Tracker</h1>
+          <a href="https://github.com/schen044/HCGIM-Tracker" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
+          <div className="project-body">
+            <div>         
+              <SimpleImageSlider
+              width={896}
+              height={504}
+              images={images}
+              showBullets={true}
+              showNavs={true}
+              autoPlay={true}
+            /></div>
+            <div className="text">The HCGIM Tracker was created as a lightweight alternative to the more bloated tracker created as a Google doc. In addition to a few pregenerated goals, a user can add, edit, and delete their own custom goals. They can also view their skills and other stats pulled from the OSRS index_lite API, so they can track their levels without needing to constantly update.</div>
+          </div>
       </div>
     )
 }
