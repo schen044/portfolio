@@ -16,7 +16,7 @@ export default function HCGIMTrackerPage() {
             images={images}
             showBullets={true}
             showNavs={true}
-            autoPlay={false}
+            autoPlay={true}
             />
       </div>
     )

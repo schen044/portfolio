@@ -13,11 +13,11 @@ export default function HCGIMTrackerPage() {
           <a href="https://github.com/schen044/minesweeper" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Link</button></a>
           <SimpleImageSlider
             width={896}
-            height={504}
+            height={600}
             images={images}
             showBullets={true}
             showNavs={true}
-            autoPlay={false}
+            autoPlay={true}
           />
       </div>
     )

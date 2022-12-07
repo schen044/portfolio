@@ -17,7 +17,7 @@ export default function CollectionsTrackerPage() {
             images={images}
             showBullets={true}
             showNavs={true}
-            autoPlay={false}
+            autoPlay={true}
           />
       </div>
     )
