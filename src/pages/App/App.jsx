@@ -14,6 +14,7 @@ export default function App() {
     <main className="App">
       <Header />
           <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/hcgim-tracker" element={<HCGIMTrackerPage />} />
             <Route path="/out-of-office" element={<OutOfOfficePage />} />
