@@ -1,15 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
 .github-icon {
     fill: #171515;
 }
+
 .linkedin-icon {
     fill: #0a66c2;
 }
+
 .email-icon {
     fill: #ea4335;
+    color: #ea4335
 }
+
 a:visited {
     text-decoration: none;
-    color: #ea4335;
+    color: blue;
 }
 .socials > * {
     transition: all .2s;

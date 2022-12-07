@@ -1,35 +1,24 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import './App.css';
-import { getUser } from '../../utilities/users-service'
-import AuthPage from '../AuthPage/AuthPage'
+import HomePage from '../HomePage/HomePage'
 import HCGIMTrackerPage from '../HCGIMTrackerPage/HCGIMTrackerPage'
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
+import OutOfOfficePage from '../OutOfOfficePage/OutOfOfficePage'
+import CollectionsTrackerPage from '../CollectionsTrackerPage/CollectionsTrackerPage'
+import MinesweeperPage from '../MinesweeperPage/MinesweeperPage'
 import Header from '../../components/Header/Header'
 
 export default function App() {
-  const [user, setUser] = useState(getUser())
 
   return (
     <main className="App">
-      <Header user={user} setUser={setUser} />
-      <div>
-        <h1>Hi, I'm Serra!</h1>
-      </div>
-      {/* { user ? 
-        <>
-          
+      <Header />
           <Routes>
+            <Route path="/home" element={<HomePage />} />
             <Route path="/hcgim-tracker" element={<HCGIMTrackerPage />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
-          </Routes>
-        </>
-        :
-        <AuthPage setUser={setUser}/>
-      } */}
-                <Routes>
-            <Route path="/hcgim-tracker" element={<HCGIMTrackerPage />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/out-of-office" element={<OutOfOfficePage />} />
+            <Route path="/collections-tracker" element={<CollectionsTrackerPage />} />
+            <Route path="/minesweeper" element={<MinesweeperPage />} />
           </Routes>
     </main>
   );
