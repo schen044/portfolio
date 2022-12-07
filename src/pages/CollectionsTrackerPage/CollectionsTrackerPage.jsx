@@ -10,7 +10,7 @@ export default function CollectionsTrackerPage() {
     ];
     return (
         <div>
-          <a href="https://github.com/schen044/Collections-Tracker" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Link</button></a>
+          <a href="https://github.com/schen044/Collections-Tracker" target="_blank"><button className="github-button">{githubImage} &nbsp; Github Repo Link</button></a>
           <SimpleImageSlider
             width={896}
             height={504}
