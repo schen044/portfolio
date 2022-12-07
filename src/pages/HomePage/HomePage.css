@@ -2,9 +2,6 @@
   display: flex;
   justify-content: space-around;
   margin: 200px;
-  background-color: rgba(128, 128, 128, 0.524);
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px 10px rgba(128, 128, 128, 0.524);
   font-size: 30px;
 }
 
