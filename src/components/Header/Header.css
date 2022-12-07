@@ -8,7 +8,7 @@
 }
 
 .github-icon {
-    fill: #171515;
+    fill: #ffffffc4;
 }
 
 .linkedin-icon {
@@ -24,6 +24,13 @@ a:visited {
     text-decoration: none;
     color: white;
 }
+
+/* .socials > a{
+    border: 1px red solid;
+    background-color: rgba(128, 128, 128, 0.258);
+    border-radius: 30px;
+} */
+
 .socials > * {
     transition: all .2s;
     filter: grayscale(1);
